@@ -1,11 +1,11 @@
 FORMAT: 1A
 HOST: http://private-7871e-carltonsoftware.apiary-mock.com
 
-# Tabs API v1.0
+# TabsX API v1.0
 
-The tabs API provides a simple way for developers to make use of data contained within a tabs system, 
+The tabsX API provides a simple way for developers to make use of data contained within a tabsX system,
 in a platform and language agnostic way. This allows developers with no knowledge of the internal 
-workings of tabs to develop websites, iPhone apps, or to provide data to affiliates easily, 
+workings of tabsX to develop websites, iPhone apps, or to provide data to affiliates easily,
 without having to worry about how prices are calculated, what extras should be added onto a booking, 
 or whether a booking is allowed based on a property's short-break rules.  For more information please 
 see [our github wiki](https://github.com/CarltonSoftware/api-documentation/wiki).
@@ -2163,7 +2163,7 @@ See documentation for availability code meanings.
 
 ## Retrieve a list of rooms for this property [/property/mousecott_SS/room]
 
-Note: This is only available if you are using tabs2.
+Note: This is only available if you are using tabsX2.
 
 ### Rooms [GET]
 
@@ -2186,7 +2186,7 @@ Note: This is only available if you are using tabs2.
 
 ## Retrieve a list of security deposits for this property [/property/mousecott_SS/securitydeposit]
 
-Note: This is only available if you are using tabs2.
+Note: This is only available if you are using tabsX2.
 
 ### Security Deposits [GET]
 
@@ -2980,7 +2980,7 @@ argument in the GET daterangeprice call (e.g. /property/mousecott_SS/daterangepr
             }
         }
 
-### Create a booking enquiry (when using tabs2) [POST]
+### Create a booking enquiry (when using tabsX2) [POST]
 
 + Request (application/json)
 
@@ -3302,7 +3302,7 @@ If the booking exists, but you do not have access to view it, a 403 response wil
 
 ### Update details of a booking [PUT]
 
-Note: Updating bookings is only available if you are using tabs2.
+Note: Updating bookings is only available if you are using tabsX2.
 
 + Request (application/json)
 
@@ -3320,7 +3320,7 @@ Note: Updating bookings is only available if you are using tabs2.
 
 ### Add party members [PUT]
 
-Note, in tabs2, a guestagerangeid parameter is also accepted for each party member.
+Note, in tabsX2, a guestagerangeid parameter is also accepted for each party member.
 
 + Request (application/json)
 
@@ -3479,7 +3479,7 @@ Confirms that a web-booking has been finished
 
 ## Booking notes [/booking/c70175835bda68846e/note]
 
-Adds a note onto a booking.  Please note, the visibility flag is client side only, this will not determine a visibility of notes in tabs.
+Adds a note onto a booking.  Please note, the visibility flag is client side only, this will not determine a visibility of notes in tabsX.
 
 ### Add a note [POST]
 
@@ -3587,9 +3587,9 @@ Add a payment (made outside of the API) onto a booking. Only one payment per boo
 
 ## Tabs bookings [/booking/c70175835bda68846e/tabsbooking]
 
-If a web booking is converted, this endpoint will return the tabs booking data of the web booking.
+If a web booking is converted, this endpoint will return the tabsX booking data of the web booking.
 
-### Return a converted tabs booking [GET]
+### Return a converted tabsX booking [GET]
 
 + Response 200
 
@@ -3652,11 +3652,11 @@ If you do not have access to create bookings, a 403 response will be returned
 
 + Response 204
 
-# Group Tabs bookings
+# Group TabsX bookings
 
-## Tabs bookings [/tabsbooking/299463]
+## TabsX bookings [/tabsbooking/299463]
 
-### Get a tabs booking [GET]
+### Get a tabsX booking [GET]
 
 + Response 200
 
@@ -3700,7 +3700,7 @@ If you do not have access to create bookings, a 403 response will be returned
 
 ## Payments [/tabsbooking/299463/payment]
 
-Adds an interim or balance payment onto a tabs booking.
+Adds an interim or balance payment onto a tabsX booking.
 
 ### Add a payment [POST]
 
@@ -3738,7 +3738,7 @@ Adds an interim or balance payment onto a tabs booking.
 
 ## Contact history [/tabsbooking/299463/contacthistory]
 
-Adds contact history onto the customer of the supplied booking in Tabs
+Adds contact history onto the customer of the supplied booking in TabsX
 
 ### Add contact history [PUT]
 
@@ -4406,7 +4406,7 @@ Adds contact history onto the customer of the supplied booking in Tabs
 
 ### Get a list of guest age ranges [GET]
 
-Note, this is for tabs2 only.
+Note, this is for tabsX2 only.
 
 + Response 200
 
